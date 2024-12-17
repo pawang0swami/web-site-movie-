@@ -2,6 +2,7 @@ import Header from "./com/Header";
 import Cards from "./com/Cards";
 import Add from "./com/Add";
 import { Route, Routes } from "react-router-dom";
+import Dit from "./com/Dit";
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Cards/>}/> 
-        <Route path="/add" element={<Add/>}/>       
+        <Route path="/add" element={<Add/>}/>   
+        <Route path="/detail/:id"   element={<Dit/>}/ >
       </Routes>
     </div>
   );
