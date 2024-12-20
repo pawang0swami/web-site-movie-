@@ -24,5 +24,7 @@ const analytics = getAnalytics(app);
 
 export const  db = getFirestore(app)
 export const mall= collection(db,"movie")
+export const mrate= collection(db,"rate")
+
 // export default analytics;
 export default app

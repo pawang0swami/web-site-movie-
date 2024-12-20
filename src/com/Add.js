@@ -23,7 +23,14 @@ const abc=async()=>{
         buttons:false,
         timer:3000
     })
+    setform( {
+      name: "",
+      year: "",
+      about: "",
+      img: ""
+    },)
     setl(false)
+
 }
 
          // above this that code is the about data send to database  

@@ -14,7 +14,7 @@ const Cards = () => {
     setl(true);
     async function abcd() {
       const _data = await getDocs(mall);
-      console.log(_data);
+      // console.log(_data);
       _data.forEach((doc) => {
         setdata((p) => [...p, {...(doc.data()),id:doc.id}]);
         setl(false);
@@ -55,7 +55,9 @@ const Cards = () => {
     <div className="flex flex-wrap  p-3 mt-2">
       {data.map((e, i) => {
         return (
-        <Link to={"/detail/${e.id}"}>
+        <Link to={`/detail/${e.id}`}>
+      
+
           <div
             key={i}
             className="  card shadow-lg p-2 hover:-translate-y-3 cursor-pointer  font-bold mt-6 transition-all duration-500"
