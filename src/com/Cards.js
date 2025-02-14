@@ -69,7 +69,7 @@ const Cards = () => {
             </h1>
             <h3 className="flex items-center mr-1">
               <span className="text-gray-500">Ranting: </span>{" "}
-              <ReactStars size={20} edit={false} value={e.rating} />
+              <ReactStars size={20} edit={false} value={e.rating/e.rated} />
             </h3>
             <h3>
               <span className="text-gray-500">Year :</span>

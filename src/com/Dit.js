@@ -17,7 +17,7 @@ const Dit = () => {
     img: "",
     about: "",
     rating: 0, //total 5=3=4=3 star
-    rated: 0, // total user
+    rated: 0 // total user
   });
 
   useEffect(() => {
