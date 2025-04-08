@@ -62,7 +62,7 @@ const Cards = () => {
             key={i}
             className="  card shadow-lg p-2 hover:-translate-y-3 cursor-pointer  font-bold mt-6 transition-all duration-500"
           >
-            <img className="h-60 md:h-72 " src={e.img} />
+            <img className="h-60 md:h-72 " src={e.img} alt={e.title || "Image"} />
             <h1>
               <span className="text-gray-500">Name :</span>
               {e.name}
@@ -77,9 +77,13 @@ const Cards = () => {
             </h3>
           </div>
           </Link>
+
+
+
         );
       })}
     </div>)
+ 
   );
 };
 
