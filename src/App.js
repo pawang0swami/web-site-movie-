@@ -8,8 +8,9 @@ function App() {
   return (
     <div className="relative">
       <Header />
+    
       <Routes>
-        <Route path="/web-site-movie-/" element={<Cards/>}/> 
+        <Route path="/" element={<Cards/>}/> 
         <Route path="/add" element={<Add/>}/>   
         <Route path="/detail/:id"   element={<Dit/>}/ >
       </Routes>
